@@ -56,5 +56,13 @@ public class HomeController {
 
 		return "index";
 	}
+	
+	@RequestMapping(value = "/login.do", method = RequestMethod.POST)
+	public String dologin(HttpServletRequest req) {
+
+		req.setAttribute("contentPage", "index.jsp");
+
+		return "index";
+	}
 
 }

@@ -15,16 +15,16 @@
 				<span class="glyphicon glyphicon-lock"></span> Login
 			</h4>
 		</div>
-		<form role="form">
+		<form role="form" action="login.do" method="post">
 			<div class="form-group">
 				<label for="usrname"><span class="glyphicon glyphicon-user"></span>
-					Username</label> <input type="text" class="form-control" id="usrname"
-					placeholder="Enter email">
+					Username</label> <input type="text" class="form-control" name="m_emailID"
+					id="usrname" placeholder="Enter email">
 			</div>
 			<div class="form-group">
 				<label for="psw"><span class="glyphicon glyphicon-eye-open"></span>
-					Password</label> <input type="text" class="form-control" id="psw"
-					placeholder="Enter password">
+					Password</label> <input type="text" class="form-control" name="m_pw"
+					id="psw" placeholder="Enter password">
 			</div>
 			<div class="checkbox">
 				<label><input type="checkbox" value="" checked>Remember

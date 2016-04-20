@@ -1,6 +1,9 @@
 package com.wj.mwp.db;
 
+import java.util.List;
+
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,13 +25,11 @@ public class MwpDAO {
 			String m_phoneNO = req.getParameter("m_phoneNO");
 			String m_birthD = req.getParameter("m_birthD");
 			
-			System.out.println(m_emailID);
-			System.out.println(m_pw);
-			System.out.println(m_phoneNO);
-			System.out.println(m_birthD);
+			//System.out.println(m_emailID);
+			//System.out.println(m_pw);
+			//System.out.println(m_phoneNO);
+			//System.out.println(m_birthD);
 			
-			
-
 			Members mbs = new Members(m_emailID, m_pw, m_phoneNO, m_birthD);
 
 			MwpMapper mm = ss.getMapper(MwpMapper.class);
@@ -47,5 +48,37 @@ public class MwpDAO {
 		}
 
 	}
+	
+	public void login(HttpServletRequest req, HttpServletResponse res){
+		String m_emailID = req.getParameter("m_emailID");
+		String m_pw = req.getParameter("m_pw");
+		
+		Members mbs = new Members(m_emailID, m_pw, null, null);		
+		MwpMapper mm = ss.getMapper(MwpMapper.class);
+		try {
+			List<Members> members = mm.login(mbs);
+			
+			if(members.size() == 0){
+				req.setAttribute("contentPage", "login.jsp");
+				req.setAttribute("result", "ID가 없습니다.");
+				return;
+			}
+			
+			// 여기부터 다시
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		
+		
+		
+		
+		
+		
+		
+	}
+	
+	
+	
 
 }

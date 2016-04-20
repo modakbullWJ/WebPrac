@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wj.mwp.db.MwpMapper">
+
+	<insert id="join" parameterType="com.wj.mwp.bean.Members">
+
+		insert into mwp_members
+		(m_emailID, m_pw, m_phoneNO, m_birthD) values(#{m_emailID}, #{m_pw},
+		#{m_phoneNO}, #{m_birthD});
+
+
+	</insert>
+
+
+
+</mapper>
