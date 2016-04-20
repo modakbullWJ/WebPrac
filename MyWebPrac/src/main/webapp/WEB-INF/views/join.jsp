@@ -10,7 +10,7 @@
 
 	<div class="container" style="width:400px">
 		<h2>회원 가입</h2>
-		<form role="form">
+		<form role="form" action="join.do" method="post">
 			<div class="form-group">
 				<label for="email">Email:</label> <input type="email"
 					class="form-control" name="m_emailID" id="email"
@@ -33,7 +33,7 @@
 			</div>
 			<div class="form-group">
 				<label for="birthD">생년월일</label> <input type="text"
-					class="form-control" name="m_birthD" id="m_birthD"
+					class="form-control" name="m_birthD" id="birthD"
 					placeholder="8자리 ex)19860228">
 			</div>
 

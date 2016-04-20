@@ -49,4 +49,12 @@ public class HomeController {
 		return "index";
 	}
 
+	@RequestMapping(value = "/login.go", method = RequestMethod.GET)
+	public String gologin(HttpServletRequest req) {
+
+		req.setAttribute("contentPage", "login.jsp");
+
+		return "index";
+	}
+
 }

@@ -22,6 +22,9 @@
 		$("#home").click(function() {
 			location.href = "/mwp/";
 		});
+		$("#login").click(function() {
+			location.href = "/mwp/login.go";
+		});
 
 	});
 </script>
@@ -90,7 +93,7 @@ footer {
 					<li><a id="join"><span class="glyphicon glyphicon-log-in"></span>
 							회원가입</a></li>
 					
-					<li><a href="#"><span class="glyphicon glyphicon-log-in"></span>
+					<li><a id="login"><span class="glyphicon glyphicon-log-in"></span>
 							Login</a></li>
 				</ul>
 			</div>

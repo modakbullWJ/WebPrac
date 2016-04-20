@@ -19,8 +19,15 @@ public class MwpDAO {
 		try {
 			String m_emailID = req.getParameter("m_emailID");
 			String m_pw = req.getParameter("m_pw");
-			String m_phoneNO = req.getParameter("m_phomeNO");
+			String m_phoneNO = req.getParameter("m_phoneNO");
 			String m_birthD = req.getParameter("m_birthD");
+			
+			System.out.println(m_emailID);
+			System.out.println(m_pw);
+			System.out.println(m_phoneNO);
+			System.out.println(m_birthD);
+			
+			
 
 			Members mbs = new Members(m_emailID, m_pw, m_phoneNO, m_birthD);
 

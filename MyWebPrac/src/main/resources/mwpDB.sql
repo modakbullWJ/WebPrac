@@ -9,3 +9,5 @@ m_birthD VARCHAR(8) not null
 select * from mwp_members;
 
 insert p_members values('ruffy15@gmail.com','asdf','19860228');
+
+DROP TABLE 	members;
