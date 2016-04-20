@@ -44,7 +44,7 @@ public class HomeController {
 
 		md.join(req);
 
-		req.setAttribute("contentPage", "login.jsp");
+		req.setAttribute("contentPage", "joinResult.jsp");
 
 		return "index";
 	}

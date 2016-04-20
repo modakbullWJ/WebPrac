@@ -4,36 +4,36 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>Login</title>
 </head>
 <body>
-	<form class="form-horizontal" role="form">
-		<div class="form-group">
-			<label class="control-label col-sm-2" for="email">Email:</label>
-			<div class="col-sm-10">
-				<input type="email" class="form-control" id="email"
+
+
+	<div class="container" style="padding: 40px 50px; width: 450px;">
+		<div class="header" style="padding: 35px 50px;">
+			<h4>
+				<span class="glyphicon glyphicon-lock"></span> Login
+			</h4>
+		</div>
+		<form role="form">
+			<div class="form-group">
+				<label for="usrname"><span class="glyphicon glyphicon-user"></span>
+					Username</label> <input type="text" class="form-control" id="usrname"
 					placeholder="Enter email">
 			</div>
-		</div>
-		<div class="form-group">
-			<label class="control-label col-sm-2" for="pwd">Password:</label>
-			<div class="col-sm-10">
-				<input type="password" class="form-control" id="pwd"
+			<div class="form-group">
+				<label for="psw"><span class="glyphicon glyphicon-eye-open"></span>
+					Password</label> <input type="text" class="form-control" id="psw"
 					placeholder="Enter password">
 			</div>
-		</div>
-		<div class="form-group">
-			<div class="col-sm-offset-2 col-sm-10">
-				<div class="checkbox">
-					<label><input type="checkbox"> Remember me</label>
-				</div>
+			<div class="checkbox">
+				<label><input type="checkbox" value="" checked>Remember
+					me</label>
 			</div>
-		</div>
-		<div class="form-group">
-			<div class="col-sm-offset-2 col-sm-10">
-				<button type="submit" class="btn btn-default">Submit</button>
-			</div>
-		</div>
-	</form>
+			<button type="submit" class="btn btn-success btn-block">
+				<span class="glyphicon glyphicon-off"></span> Login
+			</button>
+		</form>
+	</div>
 </body>
 </html>

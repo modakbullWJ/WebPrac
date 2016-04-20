@@ -89,7 +89,7 @@ footer {
 					<li><a href="#">Contact</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
-					<li>${result}</li>
+					
 					<li><a id="join"><span class="glyphicon glyphicon-log-in"></span>
 							회원가입</a></li>
 					
@@ -114,7 +114,7 @@ footer {
 				</p>
 			</div>
 			<div class="col-sm-8 text-left">
-				<jsp:include page="${contentPage }"></jsp:include>
+				<jsp:include page="${contentPage}"></jsp:include>
 
 			</div>
 			<div class="col-sm-2 sidenav">
