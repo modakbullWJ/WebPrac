@@ -21,11 +21,11 @@
 			<div class="form-group">
 				<label for="usrname"><span class="glyphicon glyphicon-user"></span>
 					Username</label> <input type="text" class="form-control" name="m_emailID"
-					id="usrname" placeholder="Enter email">
+					id="usrname" placeholder="Enter email" value="${cookie.lastLoginID.value}">
 			</div>
 			<div class="form-group">
 				<label for="psw"><span class="glyphicon glyphicon-eye-open"></span>
-					Password</label> <input type="text" class="form-control" name="m_pw"
+					Password</label> <input type="password" class="form-control" name="m_pw"
 					id="psw" placeholder="Enter password">
 			</div>
 			<div class="checkbox">

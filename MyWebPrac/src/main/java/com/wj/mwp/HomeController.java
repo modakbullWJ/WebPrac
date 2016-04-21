@@ -1,6 +1,7 @@
 package com.wj.mwp;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -56,11 +57,17 @@ public class HomeController {
 
 		return "index";
 	}
-	
-	@RequestMapping(value = "/login.do", method = RequestMethod.POST)
-	public String dologin(HttpServletRequest req) {
 
-		req.setAttribute("contentPage", "index.jsp");
+	@RequestMapping(value = "/login.do", method = RequestMethod.POST)
+	public String dologin(HttpServletRequest req, HttpServletResponse res) {
+		md.login(req, res);
+
+		return "index";
+	}
+
+	@RequestMapping(value = "/logout.do", method = RequestMethod.GET)
+	public String logout(HttpServletRequest req) {
+		md.logout(req);
 
 		return "index";
 	}
