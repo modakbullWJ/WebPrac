@@ -5,6 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Login</title>
+
 </head>
 <body>
 
@@ -15,6 +16,7 @@
 				<span class="glyphicon glyphicon-lock"></span> Login
 			</h4>
 		</div>
+		<div>${result}</div>
 		<form role="form" action="login.do" method="post">
 			<div class="form-group">
 				<label for="usrname"><span class="glyphicon glyphicon-user"></span>

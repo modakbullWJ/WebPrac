@@ -64,7 +64,10 @@ public class MwpDAO {
 				return;
 			}
 			
-			// 여기부터 다시
+			// db에서 나온 유저정보
+			
+			Members db_m = members.get(0);
+			
 			
 		} catch (Exception e) {
 			// TODO: handle exception
